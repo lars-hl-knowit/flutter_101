@@ -1,4 +1,4 @@
-import 'package:app/screens/dummy_screen.dart';
+import 'package:app/screens/notifier_state_screen.dart';
 import 'package:app/util/app_colors.dart';
 import 'package:app/util/context_extensions.dart';
 import 'package:app/widgets/button.dart';
@@ -74,7 +74,7 @@ class _StatefulScreenState extends State<StatefulScreen> {
           SizedBox(height: 32),
           Button(
             label: 'Neste side',
-            onPressed: () => context.push(DummyScreen()),
+            onPressed: () => context.push(ChangeNotifierStateScreen()),
           ),
         ],
       ),

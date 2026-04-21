@@ -1,4 +1,7 @@
 import 'package:app/screens/animations_screen.dart';
+import 'package:app/screens/notifier_state_screen.dart';
+import 'package:app/screens/theme_screen.dart';
+import 'package:app/screens/widgets_screen.dart';
 import 'package:app/screens/stateful_screen.dart';
 import 'package:app/util/context_extensions.dart';
 import 'package:app/widgets/button.dart';
@@ -23,12 +26,24 @@ class HomeScreen extends StatelessWidget {
             onPressed: () async => await context.push(LayoutScreen()),
           ),
           Button(
+            label: 'Widgets',
+            onPressed: () async => await context.push(WidgetsScreen()),
+          ),
+          Button(
             label: 'State',
             onPressed: () async => await context.push(StatefulScreen()),
           ),
           Button(
+            label: 'Delt tilstand',
+            onPressed: () async => await context.push(ChangeNotifierStateScreen()),
+          ),
+          Button(
             label: 'Animasjon',
             onPressed: () async => await context.push(AnimationsScreen()),
+          ),
+          Button(
+            label: 'Theme',
+            onPressed: () async => await context.push(ThemeScreen()),
           ),
         ],
       ),
