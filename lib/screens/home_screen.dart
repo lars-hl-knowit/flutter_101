@@ -1,4 +1,5 @@
 import 'package:app/screens/animations_screen.dart';
+import 'package:app/screens/notifications_screen.dart';
 import 'package:app/screens/notifier_state_screen.dart';
 import 'package:app/screens/theme_screen.dart';
 import 'package:app/screens/widgets_screen.dart';
@@ -44,6 +45,10 @@ class HomeScreen extends StatelessWidget {
           Button(
             label: 'Theme',
             onPressed: () async => await context.push(ThemeScreen()),
+          ),
+          Button(
+            label: 'Overlays',
+            onPressed: () async => await context.push(NotificationsScreen()),
           ),
         ],
       ),
